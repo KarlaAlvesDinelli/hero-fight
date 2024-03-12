@@ -89,7 +89,7 @@ export default function ModalBattle(
             </div>
           </div>
           <section className="flex justify-center">
-            <Button color="error" className="mt-11 font-bold text-lg "  onClick={closeModal}>Fechar</Button>
+            <Button color="error" className="mt-11 font-bold text-lg "  onClick={closeModal}>Fechar Batalha</Button>
           </section>
         </Box>
       </Modal>
