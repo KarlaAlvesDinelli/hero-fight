@@ -40,7 +40,7 @@ export default function ModalBattle(
       >
         <Box sx={style} className="w-2/5 h-2/4 ">
           <h2 className="text-center font-bold text-xl">Resultados da Batalha</h2>
-          <h3 className="text-center text-lg font-bold text-green-500 flex justify-center mt-2"> Vencedor: 
+          <h3 className="text-center text-lg font-bold text-green-500 flex justify-center mt-2">{ winner !== "Empate" && 'Vencedor:'} 
             <p className="text-gray-800 ml-5"> {winner}</p>
           </h3>
           <div className="flex justify-between text-gray-600 h-3/5">

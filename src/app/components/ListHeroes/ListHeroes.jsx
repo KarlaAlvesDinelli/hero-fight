@@ -45,7 +45,7 @@ export default function ListHeroes() {
           powersHero2={selectedHeroes[1].powerstats}
           totalPowersHero1={calculateTotalPower(selectedHeroes[0].powerstats)}
           totalPowersHero2={calculateTotalPower(selectedHeroes[1].powerstats)}
-          winner={winner.name} 
+          winner={winner ? winner?.name : 'Empate'} 
           closeModal={closeModal}
         />
       )}

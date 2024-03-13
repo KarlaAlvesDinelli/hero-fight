@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { HeroesContext } from '@/app/contexts/HeroesContext';
 import { calculateTotalPower } from '@/app/utils/calculateTotalPower'; 
 
-// Hook para selecionar os heróis e controlar a modal
 const useHeroSelection = () => {
 
   const {
@@ -20,7 +19,12 @@ const useHeroSelection = () => {
         const hero2 = hero;
         const totalPowerHero1 = calculateTotalPower(hero1.powerstats); 
         const totalPowerHero2 = calculateTotalPower(hero2.powerstats); 
-        const winner = totalPowerHero1 > totalPowerHero2 ? hero1 : hero2; 
+        let winner = null; 
+        if (totalPowerHero1 > totalPowerHero2) {
+          winner = hero1;
+        } else if (totalPowerHero2 > totalPowerHero1) {
+          winner = hero2;
+        } 
         setWinner(winner);
         setIsModalOpen(true);
       }

@@ -1,4 +1,3 @@
-//Função para somar o poder maximo
 export const calculateTotalPower = (hero) => {
   const totalPower = (
     hero.intelligence +

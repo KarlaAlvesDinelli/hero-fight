@@ -28,7 +28,7 @@ const SearchBar = ({ search, setSearch }) => {
         placeholder="Buscar"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        autoComplete="new-password"
+        autoComplete='password'
       />
       <IconButton
         type="button"
